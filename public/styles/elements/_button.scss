@@ -1,0 +1,35 @@
+button,
+.button {
+  display: inline-block;
+  padding: 12px;
+  border: 0;
+  background: $color-active;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: lighten($color-active, 10%);
+  }
+
+  &:disabled {
+    cursor: default;
+    background: black;
+    color: $color-mineshaft;
+  }
+}
+
+.button--outline {
+  background: none;
+  border: 1px solid $color-active;
+  color: $color-active;
+
+  &:hover {
+    background: none;
+    border: 1px solid white;
+    color: white;
+  }
+}
+

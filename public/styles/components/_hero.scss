@@ -1,0 +1,14 @@
+.hero {
+	display: flex;
+	background-size: auto 150%;
+	background-image: url('/images/leonardo-yip-451207-unsplash.jpg');
+	width: 100%;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+
+  .animation {
+    perspective: 40px;
+    transform-origin: 50% 50%;
+  }
+}

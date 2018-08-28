@@ -1,0 +1,27 @@
+<!-- <section class="container">
+	<div class="story">
+		<article class="story-item">
+			<h1 class="story-item__title">Plan, build, operate.</h1>
+
+			<p>
+				We have the knowledge and expertise to not only plan and
+				deliver your product, but keep it humming along when it's
+				out in the wild.
+			</p>
+
+			<a href="" class="button button--outline">Technology and processes</a>
+		</article>
+
+		<article class="story__item"></article> -->
+
+<article class="story-item">
+	<h1 class="story-item__title">{{ story.title }}</h1>
+
+	<p>{{ story.body }}</p>
+
+	{% if story.linkToPage %}
+		<a href="/{{story.linkToPage.slug}}">{{story.linkText}}</a>
+	{% else %}
+		<a href="/{{story.linkHref}}">{{story.linkText}}</a>
+	{% endif %}
+</article>
