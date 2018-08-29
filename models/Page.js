@@ -1,11 +1,17 @@
 const keystone = require('keystone');
 const Types = keystone.Field.Types;
 
-var storage = new keystone.Storage({
+console.log(keystone.Storage.Adapters);
+
+const storage = new keystone.Storage({
   adapter: keystone.Storage.Adapters.FS,
   fs: {
-    path: keystone.expandPath('./uploads'), // required; path where the files should be stored
-    publicPath: '/public/media', // path where files will be served
+    path: keystone.expandPath('./uploads/'), // required; path where the files should be stored
+    publicPath: '/public/media/', // path where files will be served
+  },
+  schema: {
+    url: String,
+    filename: String
   }
 });
 

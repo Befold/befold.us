@@ -94,8 +94,6 @@ const mountQueue = window.mountQueue || [];
 mountQueue.forEach(({ component, mountTarget, props = {} }) => {
   const Element = _constants_component_dictionary__WEBPACK_IMPORTED_MODULE_1__[component];
 
-  console.log(_constants_component_dictionary__WEBPACK_IMPORTED_MODULE_1__);
-
   if (Element && mountTarget) {
     Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["render"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Element, props), mountTarget);
   } else {

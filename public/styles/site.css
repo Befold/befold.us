@@ -299,14 +299,29 @@ template {
 
 .container {
   margin: auto;
-  padding: 0 20px;
-  max-width: 1280px; }
+  padding: 0 40px;
+  max-width: 1024px; }
+
+.row {
+  display: flex; }
+
+.column-1 {
+  flex-basis: 8.33333%; }
+
+.column-7, .content-page__column {
+  flex-basis: 58.33333%; }
+
+.column-8 {
+  flex-basis: 66.66667%; }
 
 html,
 body {
   background: #0D0D0D;
   color: white;
   font-family: 'Montserrat', sans-serif; }
+
+.content-page {
+  padding-top: 120px; }
 
 * {
   font-weight: 500;
@@ -392,3 +407,7 @@ button,
 
 .story-item__title {
   font-size: 24px; }
+
+.cover-image {
+  background-size: 120%;
+  height: 180px; }

@@ -7,8 +7,6 @@ const mountQueue = window.mountQueue || [];
 mountQueue.forEach(({ component, mountTarget, props = {} }) => {
   const Element = allComponents[component];
 
-  console.log(allComponents);
-
   if (Element && mountTarget) {
     render(<Element {...props} />, mountTarget);
   } else {

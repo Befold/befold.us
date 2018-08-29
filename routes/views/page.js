@@ -13,6 +13,10 @@ exports = module.exports = function (req, res, next) {
       if (!result) return next();
 
       locals.page = result;
+      locals.title = result.title;
+      locals.coverImageUrl = result.coverImage.url
+
+      console.log(locals.page);
 
       done(err);
     });
